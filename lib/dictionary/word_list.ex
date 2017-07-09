@@ -1,8 +1,8 @@
 defmodule Dictionary.WordList do
   @file_system Application.get_env(:dictionary, :file_system, File)
 
-  def random_word do
-    word_list() |> Enum.random
+  def random_word(word_list) do
+    word_list |> Enum.random
   end
 
   def word_list do

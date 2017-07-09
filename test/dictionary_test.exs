@@ -6,7 +6,7 @@ defmodule DictionaryTest do
   end
 
   test "can return a random word" do
-    assert Dictionary.random_word == "not_so_random"
+    assert Dictionary.random_word(["not_so_random"]) == "not_so_random"
   end
 
 end
